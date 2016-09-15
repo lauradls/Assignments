@@ -1,0 +1,72 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# HW 1\n",
+    "## Car Salesman problem"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "What is the base price of your car?10000\n",
+      "The actual price is 18078.0 dollars.\n"
+     ]
+    }
+   ],
+   "source": [
+    "fees = {'dealerprep':293, 'destination':600}\n",
+    "Base_price = int(input(\"What is the base price of your car?\" )) \n",
+    "Actual_price = Base_price + (0.0685 * Base_price) + (0.65 * Base_price) + fees['dealerprep'] + fees['destination'] \n",
+    "print (\"The actual price is\", Actual_price, \"dollars.\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "These are the sources from where I found my data in order to make an approximation a little close to reality. The information found is not Utah specific and is not accurate enough to trust this model, it only serves the purpose of constructing a simulation.\n",
+    "\n",
+    "1.Dealer prep: http://www.realcartips.com/newcars/482-documentation-fees-by-state.shtml\n",
+    "\n",
+    "2.Destination charge: http://www.kbb.com/car-advice/articles/destination-charges/\n",
+    "\n",
+    "3.Tax: https://www.salestaxhandbook.com/utah/sales-tax-vehicles , http://www.autobytel.com/auto-news/buying-a-new-car-in-utah-107748/ \n",
+    "\n",
+    "4.License: https://www.dmv.ca.gov/portal/dmv/detail/pubs/brochures/fast_facts/ffvr34"
+   ]
+  }
+ ],
+ "metadata": {
+  "anaconda-cloud": {},
+  "kernelspec": {
+   "display_name": "Python [Root]",
+   "language": "python",
+   "name": "Python [Root]"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.5.2"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 0
+}
