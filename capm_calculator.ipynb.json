@@ -1,0 +1,59 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# HW 1\n",
+    "\n",
+    "## Problem 2 - CAPM_CALCULATOR"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Please, enter beta: 0.68\n",
+      "The expected return on the asset is 3.8096 percent\n"
+     ]
+    }
+   ],
+   "source": [
+    "beta = float(input(\"Please, enter beta: \"))\n",
+    "Rm = 4.8\n",
+    "Rf = 1.705\n",
+    "Rp = Rf + beta*(Rm - Rf)\n",
+    "print(\"The expected return on the asset is\", Rp, \"percent\")"
+   ]
+  }
+ ],
+ "metadata": {
+  "anaconda-cloud": {},
+  "kernelspec": {
+   "display_name": "Python [Root]",
+   "language": "python",
+   "name": "Python [Root]"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.5.2"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 0
+}
